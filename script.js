@@ -2,6 +2,10 @@ const copyToClipboard = document.getElementById("password-btn");
 const generateBtn = document.querySelector("#generate-btn");
 const mySlider = document.getElementById("slider");
 const sliderValue = document.getElementById("slider-value");
+const uppercase = document.getElementById("uppercase");
+const lowercase = document.getElementById("lowercase");
+const numbers = document.getElementById("numbers");
+const symbols = document.getElementById("symbols");
 let last_password;
 
 const MIN = 1;
@@ -13,6 +17,31 @@ const Characters = {
   Numbers: "0123456789",
   Symbols: "~`! @#$%^&*()_-+={[}]|:;\"'<,>.?/",
 };
+
+function updatePassword() {
+  let password = "";
+  let passwordLength = mySlider.value;
+  let characters = "";
+
+  if (uppercase.checked) {
+    characters += Characters.Uppercase;
+  }
+  if (lowercase.checked) {
+    characters += Characters.Lowercase;
+  }
+  if (numbers.checked) {
+    characters += Characters.Numbers;
+  }
+  if (symbols.checked) {
+    characters += Characters.Symbols;
+  }
+
+  for (let i = 0; i < passwordLength; i++) {
+    password += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
+
+  copyToClipboard.textContent = password;
+}
 
 copyToClipboard.onmouseover = function () {
   last_password = copyToClipboard.textContent;
@@ -38,6 +67,7 @@ function updateSlider() {
   valPercentage = (mySlider.value / MAX) * 100;
   mySlider.style.background = `linear-gradient(to right, #a27b5c ${valPercentage}%, #3f4e4f ${valPercentage}%)`;
   sliderValue.value = mySlider.value;
+  updatePassword();
 }
 
 function updateSliderValue() {
@@ -49,9 +79,15 @@ function updateSliderValue() {
   valPercentage = (sliderValue.value / MAX) * 100;
   mySlider.style.background = `linear-gradient(to right, #a27b5c ${valPercentage}%, #3f4e4f ${valPercentage}%)`;
   mySlider.value = sliderValue.value;
+  updatePassword();
 }
 
 mySlider.addEventListener("input", updateSlider);
 sliderValue.addEventListener("input", updateSliderValue);
+uppercase.addEventListener("input", updatePassword);
+lowercase.addEventListener("input", updatePassword);
+numbers.addEventListener("input", updatePassword);
+symbols.addEventListener("input", updatePassword);
 
+updatePassword();
 updateSlider();
