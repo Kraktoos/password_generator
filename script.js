@@ -37,7 +37,9 @@ function updatePassword() {
   }
 
   for (let i = 0; i < passwordLength; i++) {
-    password += characters.charAt(Math.floor(Math.random() * characters.length));
+    let randomNumber = crypto.getRandomValues(new Uint32Array(1))[0];
+    randomNumber = randomNumber / 0x100000000;
+    password += characters.charAt(Math.floor(randomNumber * characters.length));
   }
 
   copyToClipboard.textContent = password;
