@@ -5,8 +5,13 @@ body {
   text-align: center;
 }
 
+button {
+  font-family: "Roboto", sans-serif;
+}
+
 #container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -19,4 +24,27 @@ h1 {
 #bolded {
   font-weight: bold;
   color: #a27b5c;
+}
+
+#password-btn {
+  width: 871px;
+  height: 88px;
+
+  background: #3f4e4f;
+  border: none;
+  border-radius: 10px;
+  color: #dcd7c9;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+#password-btn:hover {
+  background-color: #a27b5c;
+  color: #2c3639;
+  font-weight: bold;
+  animation-duration: 0.3s;
+}
+
+#generate {
+  color: #3f4e4f;
 }
