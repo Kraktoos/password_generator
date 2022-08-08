@@ -1,4 +1,5 @@
 const copyToClipboard = document.getElementById("password-btn");
+const generateBtn = document.querySelector("#generate-btn");
 let last_password;
 
 const Characters = {
