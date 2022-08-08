@@ -48,8 +48,27 @@ h1 {
   font-weight: bold;
 }
 
-.slider {
+#password-btn:active {
+  background-color: red;
+}
+
+input[type="range"] {
   width: 871px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  accent-color: #a27b5c;
+  background-color: #3f4e4f;
+}
+
+input[type="range"]::-moz-range-track {
+  background-color: #3f4e4f;
+  accent-color: #a27b5c;
 }
 
 .h2-container {
