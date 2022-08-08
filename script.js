@@ -88,6 +88,7 @@ uppercase.addEventListener("input", updatePassword);
 lowercase.addEventListener("input", updatePassword);
 numbers.addEventListener("input", updatePassword);
 symbols.addEventListener("input", updatePassword);
+generateBtn.addEventListener("click", updatePassword);
 
 updatePassword();
 updateSlider();

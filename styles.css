@@ -16,7 +16,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 871px;
+  height: 892px;
 }
 
 h1 {
@@ -40,6 +40,11 @@ h1 {
   font-size: 32px;
   cursor: pointer;
   transition: 0.15s;
+
+  overflow: hidden;
+  white-space: nowrap;
+
+  text-overflow: ellipsis;
 }
 
 #password-btn:hover {
