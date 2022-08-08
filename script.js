@@ -3,8 +3,8 @@ const generateBtn = document.querySelector("#generate-btn");
 let last_password;
 
 const Characters = {
-  Uppers: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-  Lowers: "abcdefghijklmnopqrstuvwxyz",
+  Uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  Lowercase: "abcdefghijklmnopqrstuvwxyz",
   Numbers: "0123456789",
   Symbols: "~`! @#$%^&*()_-+={[}]|:;\"'<,>.?/",
 };
