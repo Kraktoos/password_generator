@@ -36,13 +36,13 @@ h1 {
   color: #dcd7c9;
   font-size: 32px;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 #password-btn:hover {
   background-color: #a27b5c;
   color: #2c3639;
   font-weight: bold;
-  animation-duration: 0.3s;
 }
 
 #generate-btn {
