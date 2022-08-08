@@ -1,0 +1,7 @@
+# Simple Open Source Password Generator
+### Because ease of use matters
+
+![image](https://user-images.githubusercontent.com/77681625/183497995-2c1fc2c7-9ffd-4e00-ad0a-2be5ac2a3871.png)
+
+### Todo:
+- [ ] Make Responsive
