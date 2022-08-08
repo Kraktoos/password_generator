@@ -48,10 +48,6 @@ h1 {
   font-weight: bold;
 }
 
-#password-btn:active {
-  background-color: red;
-}
-
 #slider-container {
   display: flex;
   align-items: center;
