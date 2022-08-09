@@ -11,7 +11,7 @@ A simple yet secure password generator that just does what it says.
 
 ### Todo:
 
-- [ ] Make Responsive
+- [x] Make Responsive
 - [ ] Add more options
 - [ ] Add more languages
 - [ ] Add more themes
