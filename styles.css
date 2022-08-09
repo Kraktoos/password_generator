@@ -273,10 +273,6 @@ input[type="checkbox"]:hover {
     width: 500px;
   }
 
-  /* .checkbox-container {
-    display: flex;
-  } */
-
   #checkboxes {
     width: 90%;
   }
@@ -290,10 +286,6 @@ input[type="checkbox"]:hover {
   input[type="range"] {
     width: 450px;
   }
-
-  /* .checkbox-container {
-    display: flex;
-  } */
 
   #checkboxes {
     display: flex;
@@ -317,10 +309,6 @@ input[type="checkbox"]:hover {
   input[type="range"] {
     width: 400px;
   }
-
-  /* .checkbox-container {
-    display: flex;
-  } */
 }
 
 @media only screen and (max-width: 490px) {
@@ -331,8 +319,70 @@ input[type="checkbox"]:hover {
   input[type="range"] {
     width: 350px;
   }
+}
 
-  /* .checkbox-container {
-    display: flex;
-  } */
+@media only screen and (max-width: 450px) {
+  input[type="range"] {
+    width: 330px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  input[type="range"] {
+    width: 310px;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  input[type="range"] {
+    width: 290px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  input[type="range"] {
+    width: 270px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  input[type="range"] {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  input[type="range"] {
+    width: 230px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  input[type="range"] {
+    width: 210px;
+  }
+}
+
+@media only screen and (max-width: 310px) {
+  input[type="range"] {
+    width: 190px;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  input[type="range"] {
+    width: 170px;
+  }
+}
+
+@media only screen and (max-width: 270px) {
+  input[type="range"] {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  input[type="range"] {
+    width: 130px;
+  }
 }
