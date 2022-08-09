@@ -16,7 +16,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 892px;
+  height: 90vh;
 }
 
 h1 {
@@ -196,4 +196,143 @@ input[type="checkbox"]:hover {
   background-color: #a27b5c;
   color: #2c3639;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 950px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  #password-btn {
+    width: 700px;
+    height: 70px;
+    font-size: 24px;
+  }
+
+  .h2-container {
+    width: 700px;
+  }
+
+  input[type="range"] {
+    width: 641px;
+  }
+
+  #checkboxes {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  #password-btn {
+    width: 600px;
+    height: 70px;
+    font-size: 22px;
+  }
+
+  .h2-container {
+    width: 600px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  input[type="range"] {
+    width: 541px;
+  }
+
+  #checkboxes {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  h1 {
+    font-size: 52px;
+  }
+
+  #password-btn {
+    width: 90%;
+    height: 50px;
+    font-size: clamp(16px, 3vw, 32px);
+  }
+
+  .h2-container {
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  input[type="range"] {
+    width: 500px;
+  }
+
+  /* .checkbox-container {
+    display: flex;
+  } */
+
+  #checkboxes {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  input[type="range"] {
+    width: 450px;
+  }
+
+  /* .checkbox-container {
+    display: flex;
+  } */
+
+  #checkboxes {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  #generate-button {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  input[type="range"] {
+    width: 400px;
+  }
+
+  /* .checkbox-container {
+    display: flex;
+  } */
+}
+
+@media only screen and (max-width: 490px) {
+  h1 {
+    font-size: 38px;
+  }
+
+  input[type="range"] {
+    width: 350px;
+  }
+
+  /* .checkbox-container {
+    display: flex;
+  } */
 }
